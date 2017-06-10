@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<meta charset="utf-8">
+
+
+<style>
+    
+.navbar {
+    margin: auto;
+}
+
+.navbar .glyphicon  {
+    color:  yellow; 
+
+}
+
+</style>
+
+</head>
+
+
+
+<body>
+
+<nav  class="navbar navbar-inverse  navbar-fixed-top responsive-fluid"> 
+        <div  class="navbar-header">  
+          <a class="navbar-brand"> Mirroe Fashion </a>
+            
+            <button  class="navbar-toggle" type="button"
+    data-target=".navbar-collapse" data-toggle="collapse">
+            <span   class="glyphicon    glyphicon-align-justify"></span>
+            </button>
+
+        </div>  
+
+        <ul class="nav  navbar-nav collapse navbar-collapse responsive"> 
+                <li><a href="">                
+                <span class="glyphicon glyphicon-home"></span> Sobre</a></li> 
+                <li><a  href="#">
+                <span   class="glyphicon    glyphicon-question-sign"></span> Ajuda </a></li> 
+                <li><a  href="#"> 
+                <span class="glyphicon    glyphicon-list-alt"></span> Perguntas  frequentes </a></li> 
+                <li><a  href="#">
+                <span   class="glyphicon    glyphicon-bullhorn"></span> Entre  em  contato</a></li>    
+        </ul>   
+</nav>
+
+
+<div  class="jumbotron">  
+    <div  class="container">  
+        <!--  h1  e p que já  tínhamos  --> 
+        <h1>Ótima escolha!</h1> 
+        <p>Obrigado....</p> 
+    </div>  
+</div>
+
+<div class="container">
+
+<div class="row">
+
+    <div class="col-sm-4">
+        <div  class="panel  panel-success"> 
+    
+    <div  class="panel-heading">  
+        <h2 class="panel-title">Sua compra</h2> 
+    </div>  
+    
+    <div  class="panel-body"> 
+      <img  src="img/produtos/foto1-verde.png"    
+          alt="Fuzzy  Cardigan"
+          class="hidden-xs  img-thumbnail  img-responsive">
+
+            <dl>
+                <dt>Produto</dt>
+                <dd>Fuzzy Cardigan</dd>
+                <dt>Cor</dt>
+                <dd>Verde</dd>
+                <dt>Tamanho</dt>
+                <dd>40</dd>
+                <dt>Preço</dt>
+                <dd>R$ 129,00</dd>
+            </dl>
+
+
+             </div>
+        </div>  
+    </div>
+
+
+<form class="col-sm-8 col-sm-9">
+
+<fieldset class="col-md-6">     
+    <legend>Dados pessoais</legend> 
+    <div  class="form-group"> 
+        <label  for="nome">Nome completo</label>  
+        <input  type="text" class="form-control"  id="nome" name="nome" autofocus="">  
+    </div>  
+    <div  class="form-group">
+        
+        <label  for="email">Email</label> 
+        
+        <div class="input-group">
+        <span   class="input-group-addon">@</span> 
+        <input  type="email"  class="form-control"  id="email"  name="email"
+        placeholder="email@exemplo.com">
+        </div>
+
+    </div>  
+    <div  class="form-group"> 
+        <label  for="cpf">CPF</label> 
+        <input  type="text" class="form-control"  id="cpf"  name="cpf"> 
+    </div>  
+    <div  class="checkbox"> 
+        <label> 
+            <input  type="checkbox" value="sim" name="spam" checked>  
+            Quero receber spam  da  Mirror  Fashion 
+        </label>  
+    </div>  
+</fieldset>  
+    
+
+
+    <fieldset class="col-md-6">   
+        
+    <legend>Cartão  de  crédito</legend>  
+    <div  class="form-group"> 
+        <label  for="numero-cartao">Número  - CVV</label> 
+        <input  type="text" class="form-control"    
+                      id="numero-cartao"  name="numero-cartao"> 
+    </div>  
+    <div  class="form-group"> 
+        <label  for="bandeira-cartao">Bandeira</label>  
+        <select name="bandeira-cartao"  id="bandeira-cartao"  
+                class="form-control"> 
+            <option value="master">MasterCard</option>  
+            <option value="visa">VISA</option>  
+            <option value="amex">American Express</option>  
+        </select> 
+    </div>  
+    <div  class="form-group"> 
+        <label  for="validade-cartao">Validade</label>  
+        <input  type="month"  class="form-control"    
+                      id="validade-cartao"  name="validade-cartao"> 
+    </div>  
+</fieldset> 
+  
+
+
+</form>
+        <button type="submit" class="pull-right  btn  btn-primary  btn-lg"> 
+    <span class="glyphicon  glyphicon-thumbs-up"></span>  
+    Confirmar Pedido  
+    </button> 
+
+</div>
+
+
+<script src="js/jquery-3.2.0.js"></script>    
+<script src="js/bootstrap.min.js"></script>
+</body>
+
+<div>
+    <footer>
+     
+
+    </footer>
+</div>
+
+</html>
