@@ -1,0 +1,52 @@
+<!DOCTYPE	html>	
+<html>	
+	<head>	
+	
+	<meta charset="utf-8">
+	<title>Insert	title	here</title>	
+	
+	<script	type="text/javascript"	src="jquery-3.2.0.min.js">	
+	</script>	
+	
+	<script	type="text/javascript">
+
+	$(function()	{	
+	$("#meuform").keyup(function(event)	{
+
+	var imc	= (parseFloat($("#n1").val()) / (parseFloat($("#n2").val()) * parseFloat($("#n2").val())));
+
+	 if(imc < 16){
+		$("#resultado").html('Magreza grave:'+imc);
+	}else if( imc < 17 && imc > 16){
+		$("#resultado").html('Magreza moderada:'+imc);
+	}else if( imc > 17 && imc < 18.5){
+		$("#resultado").html('Magreza leve'+imc);
+
+	}else if(18.5 < imc && imc< 25){
+			$("#resultado").html('Saldavel'+imc);
+	}else if (25 < imc && imc < 30){
+			$("#resultado").html('Sobrepeso'+imc);
+
+	}else if (30 < imc && imc < 35){
+		$("#resultado").html('Obesidade Grau I'+imc);
+	}else if (35 < imc && imc < 40){
+		$("#resultado").html('Obesidade Grau II'+imc);
+	}else if ( imc > 40){
+		$("#resultado").html('Obesidade Grau III'+imc);
+	}
+
+	
+	});	
+	});	
+	
+	</script>	
+	</head>	
+<body>	
+	<form	id="meuform">	
+			<input	id="n1"	type="text"	name="n1"	placeholder="Digite	sua massa">	+		
+			<input	id="n2"	type="text"	name="n2"	placeholder="Digite	sua altura">	=		
+			
+			<span	id="resultado"></span><br/>	
+	</form>	
+</body>	
+</html>	

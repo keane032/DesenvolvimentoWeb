@@ -1,0 +1,29 @@
+<!DOCTYPE	html>	
+<html>	
+	<head>	
+	 	<meta	http-equiv="Content-Type"	content="text/html;	UTF-8"	/>	
+	 	<title>Insert	title	here</title>	
+	 	<script	type="text/javascript"	src="jquery-3.2.0.min.js">	
+	 	</script>	
+	 	<script>	
+	 	 	$(document).mousemove(function(event)	{	
+	 	 	 	$("#mouse").text("X	"	+	event.pageX	+	"Y "	+	event.pageY);	
+				 	 	 		
+				 	var eixoY = window.event.clientY;
+					var eixoX = window.event.clientX;
+					
+					var elemento = document.querySelector("#mouse");
+
+					elemento.setAttribute("style","position: relative");
+
+					elemento.style.top = (eixoY) +"px";
+					elemento.style.left = (eixoX) + "px";
+
+
+	 	 	});	
+	 	</script>	
+	</head>	
+<body>	
+	<p	id="mouse"></p>	
+</body>	
+</html>
