@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Home</title>
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+</head>
+
+<body>
+
+
+
+
+
+<div class = "navbar">
+
+  <ul class="nav  navbar-nav collapse navbar-collapse responsive"> 
+
+		
+		<li><button  data-toggle="modal" data-target=".remover">Remover</button></li>
+
+		<li><button  data-toggle="modal" data-target=".atualizar">Atualizar</button></li>
+		
+		<li><a href="logOut">LogOut</a></li>
+
+		<li><a href = "home" >Lista</a></li>
+		
+		<li>
+		<form action="home" method ="post" id="formulario">
+			<input type = "text" id="tarefa" name="tarefa">
+			<input type = "Submit" id = "botao" value = "inserir tarefa">
+		</form>
+		</li>
+		
+	
+	</ul>
+
+</div>
+
+
+<div class="modal fade remover" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Remover</h4>
+      </div>
+      <div class="modal-body">
+        
+        <form action="remover" method ="post">
+			Id do assunto:<input type = "text"  name="id">
+			 <button type="submit" class="btn btn-primary">remover</button>
+		</form>
+        
+      </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+<div class="modal fade atualizar" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Atualizar</h4>
+      </div>
+      <div class="modal-body">
+        
+        <form action="atualizar" method ="post">
+			Id do assunto:<input type = "text"  name="id">
+			Novo assunto:<input type = "text" name = "novo">
+			 <button type="submit" class="btn btn-primary">Atualizar</button>
+		</form>
+        
+      </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<script src="js/jquery-3.2.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+
+
+
+
+
+</body>
+</html>
